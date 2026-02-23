@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Notes Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧠 AI Notes Summarizer</h1>
+
+        <div class="input-box">
+            <textarea id="noteInput" placeholder="Enter your note here..."></textarea>
+            <button onclick="addNote()">Save Note</button>
+        </div>
+
+        <!-- SEARCH BAR AT TOP -->
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search notes..." 
+            onkeyup="filterNotes()" 
+            class="search-box"
+        />
+
+        <h2>Notes History</h2>
+        <div id="notesList" class="notes-grid"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
