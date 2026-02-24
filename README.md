@@ -41,6 +41,3 @@ python -m venv .venv
 pip install -r requirements.txt
 python -m nltk.downloader punkt punkt_tab stopwords
 uvicorn server.main:app --reload
-
-Open:
-http://127.0.0.1:8000/app
